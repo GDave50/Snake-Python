@@ -1,6 +1,6 @@
 import pygame
 import random
-import global_consts as glo
+import __init__ as glo
 
 class Food:
 	

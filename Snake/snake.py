@@ -1,4 +1,4 @@
-import global_consts as glo
+import __init__ as glo
 import segment
 
 class Snake:

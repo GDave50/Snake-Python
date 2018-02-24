@@ -1,5 +1,5 @@
 import pygame
-import global_consts as glo
+import __init__ as glo
 import game
 
 def check_events(game_instance):
