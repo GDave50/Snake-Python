@@ -2,6 +2,7 @@ import pygame
 import __init__ as glo
 import game
 
+# handles the events for the window
 def check_events(game_instance):
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:

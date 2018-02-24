@@ -8,16 +8,14 @@ class Movement_Queue:
 	def __init__(self):
 		pass
 	
-	"""
-	attempts to add a dir to the movement queue
-	
-	a movement will be rejected if:
-		1) the queue is full
-		2) the movement is invalid compared to the move ahead
-		   which happens if:
-			- the move is the same as the move ahead or
-			- the move opposes the move ahead
-	"""
+	# attempts to add a dir to the movement queue
+	# 
+	# a movement will be rejected if:
+	#	1) the queue is full
+	#	2) the movement is invalid compared to the move ahead
+	#	   which happens if:
+	#		- the move is the same as the move ahead or
+	#		- the move opposes the move ahead
 	def add_dir(self, dir, head):
 		if self.__slot2 is not None:
 			return
@@ -45,12 +43,10 @@ class Movement_Queue:
 		elif self.__slot2 is None:
 			self.__slot2 = dir
 	
-	"""
-	get the next movement, if there is one, remove it from
-	the queue and advance the queue
-	
-	if there are no moves in queue, return None
-	"""
+	# get the next movement, if there is one, remove it from
+	# the queue and advance the queue
+	# 
+	# if there are no moves in queue, returns None
 	def pop(self):
 		dir = self.__slot1
 		self.__slot1 = self.__slot2
