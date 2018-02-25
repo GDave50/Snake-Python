@@ -1,5 +1,6 @@
 # Snake<br />
 The classic arcade game Snake.<br />
+This program uses pygame.
 <br />
 # How to play<br />
 Use the arrow keys to control the head of the snake.<br />
