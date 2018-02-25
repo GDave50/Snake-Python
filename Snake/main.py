@@ -19,6 +19,7 @@ def check_events(game_instance):
 	
 	return True
 
+# program entry point
 def main():
 	pygame.init()
 	# make the window

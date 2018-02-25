@@ -1,4 +1,4 @@
-# Snake
+# Snake<br />
 The classic arcade game Snake.<br />
 <br />
 # How to play:<br />
