@@ -1,7 +1,7 @@
 # Snake<br />
 The classic arcade game Snake.<br />
 <br />
-# How to play:<br />
+# How to play<br />
 Use the arrow keys to control the head of the snake.<br />
 The rest of the snake's body follows the head.<br />
 Eat red apples to grow.<br />
