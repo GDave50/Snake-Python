@@ -27,11 +27,13 @@ class Food:
 	# draws the food
 	def draw(self, screen):
 		pygame.draw.ellipse(screen, glo.FOOD_COLOR,
-				[self.__x * glo.SEGMENT_SIZE, self.__y * glo.SEGMENT_SIZE,
-				glo.SEGMENT_SIZE, glo.SEGMENT_SIZE], 0)
+				[self.__x * glo.SEGMENT_SIZE + glo.DRAW_GAP/2,
+				self.__y * glo.SEGMENT_SIZE + glo.DRAW_GAP/2,
+				glo.DRAW_SIZE, glo.DRAW_SIZE], 0)
 		pygame.draw.ellipse(screen, glo.FOOD_OUTLINE_COLOR,
-				[self.__x * glo.SEGMENT_SIZE, self.__y * glo.SEGMENT_SIZE,
-				glo.SEGMENT_SIZE, glo.SEGMENT_SIZE], 2)
+				[self.__x * glo.SEGMENT_SIZE + glo.DRAW_GAP/2,
+				self.__y * glo.SEGMENT_SIZE + glo.DRAW_GAP/2,
+				glo.DRAW_SIZE, glo.DRAW_SIZE], 2)
 	
 	# returns the x pos of the food
 	def get_x(self):

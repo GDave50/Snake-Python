@@ -59,8 +59,10 @@ class Snake:
 	
 	# draw the snake
 	def draw(self, screen):
-		for seg in self.__segs:
-			seg.draw(screen)
+		self.__segs[0].draw(screen, True)
+		
+		for i in range(len(self.__segs) - 1):
+			self.__segs[i+1].draw(screen, False)
 	
 	# returns the length of the snake
 	def get_length(self):
