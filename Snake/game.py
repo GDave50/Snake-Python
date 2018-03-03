@@ -28,6 +28,7 @@ class Game:
 		self.__snake.update_dirs()
 		
 		if self.__snake.collides() or self.__snake.out_of_bounds():
+			glo.DIE_SOUND.play()
 			return True
 		
 		# advance movement queue
@@ -42,6 +43,7 @@ class Game:
 				snake_head.get_y() == self.__food.get_y():
 			self.__growth_queue += glo.SNAKE_GROWTH_RATE
 			self.__food.new_pos(self.__snake)
+			glo.EAT_SOUND.play()
 		
 		# grow the snake if the growth queue is not empty
 		if self.__growth_queue > 0:
@@ -58,6 +60,7 @@ class Game:
 	def reset(self):
 		self.__snake.reset()
 		self.__movement_queue.clear()
+		self.__growth_queue = 0
 	
 	# draws the game
 	def draw(self, screen):

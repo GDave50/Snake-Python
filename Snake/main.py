@@ -22,6 +22,7 @@ def check_events(game_instance):
 # program entry point
 def main():
 	pygame.init()
+	pygame.mixer.init()
 	# make the window
 	screen = pygame.display.set_mode((glo.WINDOW_SIZE, glo.WINDOW_SIZE))
 	# set the title of the window
@@ -29,6 +30,12 @@ def main():
 	# initialize font
 	global FONT
 	glo.FONT = pygame.font.SysFont(glo.FONT_NAME, glo.FONT_SIZE)
+	
+	# create the sounds
+	global EAT_SOUND
+	global DIE_SOUND
+	glo.EAT_SOUND = pygame.mixer.Sound('res/sounds/eat.wav')
+	glo.DIE_SOUND = pygame.mixer.Sound('res/sounds/die.wav')
 	
 	# make the game clock
 	clock = pygame.time.Clock()

@@ -11,6 +11,9 @@ FONT_SIZE = 75
 GRID_SIZE = 20
 SNAKE_GROWTH_RATE = 5
 
+EAT_SOUND = None
+DIE_SOUND = None
+
 BODY_COLOR = (127, 255, 127) # light green
 BODY_OUTLINE_COLOR = (0, 127, 0) # dark green
 HEAD_COLOR = (222,184,135) # burlywood
